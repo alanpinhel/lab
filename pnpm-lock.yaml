@@ -42,6 +42,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@mantine/colors-generator':
+        specifier: ^7.4.0
+        version: 7.4.0(chroma-js@2.4.2)
       '@next/eslint-plugin-next':
         specifier: ^14.0.2
         version: 14.0.2
@@ -63,6 +66,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.7
         version: 18.2.3
+      chroma-js:
+        specifier: ^2.4.2
+        version: 2.4.2
       eslint:
         specifier: ^8.53.0
         version: 8.54.0
@@ -612,6 +618,14 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /@mantine/colors-generator@7.4.0(chroma-js@2.4.2):
+    resolution: {integrity: sha512-vX6ZVNXl2Q1qVxdMTrKD5/nFIk53WxMxE28tG5dUg93j7wr7RP7N1ETbJS3Mrj9P+Siq67i0MC+YwskjYkfF9A==}
+    peerDependencies:
+      chroma-js: ^2.4.2
+    dependencies:
+      chroma-js: 2.4.2
     dev: true
 
   /@mantine/core@7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0):
@@ -1525,6 +1539,10 @@ packages:
 
   /chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
+    dev: true
+
+  /chroma-js@2.4.2:
+    resolution: {integrity: sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==}
     dev: true
 
   /ci-info@3.9.0:

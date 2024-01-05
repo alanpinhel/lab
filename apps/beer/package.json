@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@mantine/colors-generator": "^7.4.0",
     "@next/eslint-plugin-next": "^14.0.2",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
@@ -24,6 +25,7 @@
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "chroma-js": "^2.4.2",
     "eslint": "^8.53.0",
     "postcss": "^8.4.33",
     "postcss-preset-mantine": "^1.12.3",
