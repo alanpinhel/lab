@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import { Poppins, Train_One } from "next/font/google";
+import "@mantine/core/styles.css";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
-const trainOne = Train_One({ subsets: ["latin"], weight: ["400"] });
+import { theme } from "@/theme";
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Barbrew",
-  description: `interface de app sobre cerveja para treinar habilidades front-end`,
+  description: `beer app interface to train front-end skills`,
 };
 
 export default function RootLayout({
@@ -16,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
+      </body>
     </html>
   );
 }
