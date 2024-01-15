@@ -11,6 +11,7 @@ import {
 } from "@mantine/core";
 import { IconArrowRight } from "@tabler/icons-react";
 
+import Link from "next/link";
 import classes from "./welcome.module.css";
 
 export function Welcome() {
@@ -49,7 +50,14 @@ export function Welcome() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Text>
           <Group gap="xl" wrap="nowrap">
-            <Button color="dark" radius="xl" size="lg" fullWidth>
+            <Button
+              fullWidth
+              color="dark"
+              component={Link}
+              href="/sign-in"
+              radius="xl"
+              size="lg"
+            >
               Sign In
             </Button>
             <Button color="dark" radius="xl" size="lg" fullWidth>
