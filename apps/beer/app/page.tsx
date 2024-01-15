@@ -2,6 +2,7 @@
 
 import { Splash } from "@/components/splash";
 import { Welcome } from "@/components/welcome";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -12,5 +13,19 @@ export default function Home() {
     return () => clearTimeout(timeout);
   }, []);
 
-  return <>{splash ? <Splash /> : <Welcome />}</>;
+  return (
+    <AnimatePresence>
+      {splash ? (
+        <motion.div
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+        >
+          <Splash />
+        </motion.div>
+      ) : (
+        <Welcome />
+      )}
+    </AnimatePresence>
+  );
 }
