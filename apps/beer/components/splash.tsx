@@ -27,7 +27,7 @@ export function Splash() {
         >
           Barbrew
         </Title>
-        <Text tt="uppercase" fw={500} fz={rem(20)}>
+        <Text tt="uppercase" fw={500} fz={rem(20)} lts={8}>
           Beer Cafe
         </Text>
       </Stack>

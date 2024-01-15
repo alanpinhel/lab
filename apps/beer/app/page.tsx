@@ -8,7 +8,7 @@ export default function Home() {
   const [splash, setSplash] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setSplash(false), 2000);
+    const timeout = setTimeout(() => setSplash(false), 500);
     return () => clearTimeout(timeout);
   }, []);
 
