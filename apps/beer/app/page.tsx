@@ -1,7 +1,7 @@
 "use client";
 
 import { Splash } from "@/components/splash";
-import { Welcome } from "@/components/welcome";
+import { Welcome } from "@/components/welcome/welcome";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
