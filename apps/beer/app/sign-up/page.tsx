@@ -1,10 +1,10 @@
 import {
   ActionIcon,
-  Anchor,
   Box,
   Button,
   Card,
   Container,
+  Divider,
   Group,
   Input,
   Stack,
@@ -14,14 +14,13 @@ import {
 } from "@mantine/core";
 import {
   IconArrowLeft,
-  IconArrowRight,
   IconBrandFacebookFilled,
   IconBrandGoogleFilled,
 } from "@tabler/icons-react";
 import Link from "next/link";
-import classes from "./sign-in.module.css";
+import classes from "./sign-up.module.css";
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <Box bg="yellow" h="100dvh">
       <Stack h="100%">
@@ -38,18 +37,18 @@ export default function SignIn() {
             </ActionIcon>
             <Button
               component={Link}
-              href="/sign-up"
+              href="/sign-in"
               variant="transparent"
               size="md"
               color="dark"
             >
-              Register
+              Login
             </Button>
           </Group>
 
           <Stack gap="xl" mt={rem(54)}>
             <Title size="h2" fw={600}>
-              Sign In
+              Sign Up
             </Title>
             <Text fw={500}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -61,52 +60,43 @@ export default function SignIn() {
         <Card bg="gray.1" className={classes.card}>
           <Stack gap="xl">
             <Input size="xl" radius="xl" placeholder="Username" />
-            <Stack gap="xs">
-              <Input
-                placeholder="Password"
+            <Input
+              placeholder="Password"
+              radius="xl"
+              size="xl"
+              type="password"
+            />
+            <Input
+              placeholder="Re Password"
+              radius="xl"
+              size="xl"
+              type="password"
+            />
+
+            <Divider label="or register with" color="dark" />
+
+            <Group justify="center" gap="xl">
+              <ActionIcon
+                color="dark"
                 radius="xl"
-                size="xl"
-                type="password"
-              />
-              <Anchor c="dark" ta="right" fz="sm">
-                Forgot Password?
-              </Anchor>
-            </Stack>
+                size="lg"
+                variant="transparent"
+              >
+                <IconBrandGoogleFilled size={32} />
+              </ActionIcon>
+              <ActionIcon
+                color="dark"
+                radius="xl"
+                size="lg"
+                variant="transparent"
+              >
+                <IconBrandFacebookFilled size={32} />
+              </ActionIcon>
+            </Group>
 
             <Button radius="xl" color="dark" size="xl" mx="md">
-              Sign In
+              Sign Up
             </Button>
-
-            <Stack mt="xl">
-              <Button
-                color="dark"
-                justify="flex-start"
-                leftSection={<IconBrandGoogleFilled size={32} />}
-                radius="xl"
-                size="lg"
-                styles={{ label: { flex: 1 } }}
-                variant="white"
-              >
-                <Group justify="space-between" w="100%">
-                  Continue with Google
-                  <IconArrowRight />
-                </Group>
-              </Button>
-              <Button
-                color="dark"
-                justify="flex-start"
-                leftSection={<IconBrandFacebookFilled size={32} />}
-                radius="xl"
-                size="lg"
-                styles={{ label: { flex: 1 } }}
-                variant="white"
-              >
-                <Group justify="space-between" w="100%">
-                  Continue with Facebook
-                  <IconArrowRight />
-                </Group>
-              </Button>
-            </Stack>
           </Stack>
         </Card>
       </Stack>

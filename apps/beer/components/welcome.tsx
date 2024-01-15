@@ -60,7 +60,14 @@ export function Welcome() {
             >
               Sign In
             </Button>
-            <Button color="dark" radius="xl" size="lg" fullWidth>
+            <Button
+              fullWidth
+              color="dark"
+              component={Link}
+              href="/sign-up"
+              radius="xl"
+              size="lg"
+            >
               Sign Up
             </Button>
           </Group>
