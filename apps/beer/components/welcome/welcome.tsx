@@ -73,8 +73,10 @@ export function Welcome() {
           </Group>
           <Button
             color="dark"
-            variant="transparent"
+            component={Link}
+            href="/list"
             rightSection={<IconArrowRight />}
+            variant="transparent"
           >
             Continue as a guest
           </Button>
