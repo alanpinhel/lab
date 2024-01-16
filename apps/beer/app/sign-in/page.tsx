@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ActionIcon,
   Anchor,
@@ -19,9 +21,18 @@ import {
   IconBrandGoogleFilled,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { FormEvent } from "react";
 import classes from "./sign-in.module.css";
 
 export default function SignIn() {
+  const router = useRouter();
+
+  const handleSubmit = (event: FormEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    router.push("/list");
+  };
+
   return (
     <Box bg="yellow" h="100dvh">
       <Stack h="100%">
@@ -59,10 +70,11 @@ export default function SignIn() {
         </Container>
 
         <Card bg="gray.1" className={classes.card}>
-          <Stack gap="xl">
-            <Input size="xl" radius="xl" placeholder="Username" />
+          <Stack component="form" gap="xl" onSubmit={handleSubmit}>
+            <Input required size="xl" radius="xl" placeholder="Username" />
             <Stack gap="xs">
               <Input
+                required
                 placeholder="Password"
                 radius="xl"
                 size="xl"
@@ -73,7 +85,7 @@ export default function SignIn() {
               </Anchor>
             </Stack>
 
-            <Button radius="xl" color="dark" size="xl" mx="md">
+            <Button type="submit" radius="xl" color="dark" size="xl" mx="md">
               Sign In
             </Button>
 

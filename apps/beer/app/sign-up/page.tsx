@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ActionIcon,
   Box,
@@ -18,9 +20,18 @@ import {
   IconBrandGoogleFilled,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { FormEvent } from "react";
 import classes from "./sign-up.module.css";
 
 export default function SignUp() {
+  const router = useRouter();
+
+  const handleSubmit = (event: FormEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    router.push("/list");
+  };
+
   return (
     <Box bg="yellow" h="100dvh">
       <Stack h="100%">
@@ -58,15 +69,17 @@ export default function SignUp() {
         </Container>
 
         <Card bg="gray.1" className={classes.card}>
-          <Stack gap="xl">
-            <Input size="xl" radius="xl" placeholder="Username" />
+          <Stack component="form" gap="xl" onSubmit={handleSubmit}>
+            <Input required size="xl" radius="xl" placeholder="Username" />
             <Input
+              required
               placeholder="Password"
               radius="xl"
               size="xl"
               type="password"
             />
             <Input
+              required
               placeholder="Re Password"
               radius="xl"
               size="xl"
@@ -94,7 +107,7 @@ export default function SignUp() {
               </ActionIcon>
             </Group>
 
-            <Button radius="xl" color="dark" size="xl" mx="md">
+            <Button type="submit" radius="xl" color="dark" size="xl" mx="md">
               Sign Up
             </Button>
           </Stack>
