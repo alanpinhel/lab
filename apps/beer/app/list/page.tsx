@@ -130,7 +130,13 @@ export default function List() {
 
         <SimpleGrid cols={2}>
           {products.map((product) => (
-            <Box pos="relative" key={product.id}>
+            <Box
+              component={Link}
+              href="/detail"
+              key={product.id}
+              pos="relative"
+              td="none"
+            >
               <Box
                 pos="absolute"
                 right={rem(20)}
