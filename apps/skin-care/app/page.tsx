@@ -22,7 +22,7 @@ import { IconArrowRight } from "@tabler/icons-react";
 export default function Home() {
   return (
     <Box
-      bg="#020953"
+      bg="#F9F5F0"
       c="#020953"
       mih="100dvh"
       miw={rem(375)}
