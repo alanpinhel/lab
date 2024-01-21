@@ -1,3 +1,6 @@
+import { BottomNavigation } from "@/components/bottom-navigation";
+import { Navbar } from "@/components/navbar";
+import { ACTION_BAR_HEIGHT } from "@/constants/action-bar-height";
 import { prata } from "@/fonts";
 import {
   ActionIcon,
@@ -12,190 +15,150 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  UnstyledButton,
   rem,
 } from "@mantine/core";
-import {
-  IconAlignJustified,
-  IconArrowRight,
-  IconCategory,
-  IconEye,
-  IconHome,
-  IconSearch,
-  IconShoppingBag,
-  IconUserCircle,
-} from "@tabler/icons-react";
+import { IconArrowRight } from "@tabler/icons-react";
 
 export default function Home() {
   return (
-    <Box pos="relative" c="#020953">
-      <Box pos="absolute" top={0} right={0} left={0} style={{ zIndex: -1 }}>
-        <Group
-          gap="xs"
-          pos="fixed"
-          right={0}
-          style={{ transform: "rotate(270deg) translate(-250px, 120px)" }}
-        >
-          <Badge c="#020953" size="lg" variant="transparent">
-            <Text lts={0.9} fz={rem(9)} fw={700}>
-              peau grasse
-            </Text>
-          </Badge>
+    <Box
+      bg="#020953"
+      c="#020953"
+      mih="100dvh"
+      miw={rem(375)}
+      pb={ACTION_BAR_HEIGHT}
+    >
+      <Container pos="relative" p={0} size="xs">
+        <Image
+          alt="midnight lotion"
+          src="/midnight-lotion.png"
+          w="100%"
+          mah={rem(580)}
+        />
 
-          <Badge size="lg" variant="transparent" c="#020953">
-            <Text lts={0.9} fz={rem(9)} fw={700}>
-              peau normale
-            </Text>
-          </Badge>
+        <Stack bottom={0} left={0} pos="absolute" right={0} top={0}>
+          <Navbar />
 
-          <Badge size="lg" color="#020953">
-            <Text lts={0.9} fz={rem(9)} fw={700}>
-              peau sensible
-            </Text>
-          </Badge>
-        </Group>
+          <Stack justify="space-between" pb="xl" px="lg" style={{ flex: 1 }}>
+            <Box>
+              <Stack gap={rem(4)}>
+                <Text fz="xs" tt="uppercase" lts={1.2}>
+                  selection du jour
+                </Text>
 
-        <Image src="/midnight-lotion.png" w="100%" alt="midnight lotion" />
-      </Box>
+                <Text
+                  className={prata.className}
+                  fz={rem(26)}
+                  tt="uppercase"
+                  w="8ch"
+                >
+                  midnight lotion
+                </Text>
 
-      <Container px="xl" py="lg">
-        <Stack>
-          <Group justify="space-between">
-            <ActionIcon variant="white" radius="xl" c="#020953">
-              <IconAlignJustified size="1rem" stroke={1.5} />
-            </ActionIcon>
+                <Text mt={rem(4)} fw={700} fz="lg">
+                  55€
+                </Text>
+              </Stack>
+              <Group
+                justify="flex-end"
+                gap="xs"
+                style={{
+                  transform: "rotate(270deg) translate(80px)",
+                  transformOrigin: "right bottom",
+                }}
+              >
+                <Badge c="#020953" size="lg" variant="transparent">
+                  <Text lts={0.9} fz={rem(9)} fw={700}>
+                    peau grasse
+                  </Text>
+                </Badge>
 
-            <Group gap="sm">
-              <ActionIcon variant="white" radius="xl" c="#020953">
-                <IconSearch size="1rem" stroke={1.5} />
-              </ActionIcon>
-              <ActionIcon variant="white" radius="xl" c="#020953">
-                <IconShoppingBag size="1rem" stroke={1.5} />
+                <Badge size="lg" variant="transparent" c="#020953">
+                  <Text lts={0.9} fz={rem(9)} fw={700}>
+                    peau normale
+                  </Text>
+                </Badge>
+
+                <Badge size="lg" color="#020953">
+                  <Text lts={0.9} fz={rem(9)} fw={700}>
+                    peau sensible
+                  </Text>
+                </Badge>
+              </Group>
+            </Box>
+
+            <Group justify="space-between" mb="md">
+              <Box
+                component="svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="39"
+                height="2"
+                viewBox="0 0 39 2"
+                fill="none"
+              >
+                <path
+                  d="M1 1L14 0.999999"
+                  stroke="#020953"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M19 1L22 1"
+                  stroke="#020953"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M27 1L30 1"
+                  stroke="#020953"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M35 1L38 1"
+                  stroke="#020953"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                G
+              </Box>
+
+              <ActionIcon size="lg" c="#020953" variant="transparent" mr="xl">
+                <IconArrowRight stroke={2} />
               </ActionIcon>
             </Group>
-          </Group>
-
-          <Stack gap={rem(4)}>
-            <Text fz="xs" tt="uppercase" lts={1.2}>
-              selection du jour
-            </Text>
-            <Text
-              className={prata.className}
-              fz={rem(26)}
-              tt="uppercase"
-              w="8ch"
-            >
-              midnight lotion
-            </Text>
-            <Text mt={rem(4)} fw={700} fz="lg">
-              55€
-            </Text>
           </Stack>
         </Stack>
       </Container>
 
-      <Box pos="fixed" bottom={0} left={0} right={0}>
-        <Group justify="space-between" pl="xl" pr={rem(40)} pb="xs">
-          <Box
-            component="svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="39"
-            height="2"
-            viewBox="0 0 39 2"
-            fill="none"
-          >
-            <path
-              d="M1 1L14 0.999999"
-              stroke="#020953"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-            <path
-              d="M19 1L22 1"
-              stroke="#020953"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-            <path
-              d="M27 1L30 1"
-              stroke="#020953"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-            <path
-              d="M35 1L38 1"
-              stroke="#020953"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-            G
-          </Box>
+      <Container p={0} size="xs" my="-xl">
+        <Paper
+          pb={rem(36)}
+          pos="relative"
+          pt={rem(36)}
+          px={rem(28)}
+          radius="xl"
+        >
+          <Stack gap="xs">
+            <Group justify="space-between">
+              <Text fz="xs" fw={700} lts="1.2" tt="uppercase" c="#020953">
+                nouveautés
+              </Text>
+              <Anchor fz="xs" fw={300} lts="1.2" tt="uppercase" c="#020953">
+                see all
+              </Anchor>
+            </Group>
 
-          <ActionIcon size="lg" c="#020953" variant="transparent">
-            <IconArrowRight stroke={2} />
-          </ActionIcon>
-        </Group>
-
-        <Paper radius="xl" p="xl">
-          <Group justify="space-between">
-            <Text tt="uppercase" fz="xs" fw={700} lts={1.2}>
-              nouveautés
-            </Text>
-
-            <Anchor tt="uppercase" fz="xs" fw={300} c="#020953" lts={1.2}>
-              see all
-            </Anchor>
-          </Group>
-
-          <SimpleGrid cols={3} mt="xs" spacing="xs">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <Card key={i} bg="#F9F5F0" h={rem(96)} radius="md" />
-            ))}
-          </SimpleGrid>
+            <SimpleGrid cols={3} spacing="xs">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <Card key={i} radius="md" bg="#F9F5F0" h={rem(96)} />
+              ))}
+            </SimpleGrid>
+          </Stack>
         </Paper>
-      </Box>
+      </Container>
 
-      <Box pos="fixed" bottom={0} left={0} right={0} style={{ zIndex: 10 }}>
-        <Paper px={rem(42)} py="xl">
-          <Group justify="space-between">
-            <UnstyledButton>
-              <Stack gap={rem(2)} align="center">
-                <IconHome stroke={1.5} />
-                <Text tt="uppercase" fz={rem(9)} lts={0.9} fw={700}>
-                  home
-                </Text>
-              </Stack>
-            </UnstyledButton>
-
-            <UnstyledButton>
-              <Stack gap={rem(2)} align="center">
-                <IconCategory stroke={1.5} />
-                <Text tt="uppercase" fz={rem(9)} lts={0.9} fw={700}>
-                  products
-                </Text>
-              </Stack>
-            </UnstyledButton>
-
-            <UnstyledButton>
-              <Stack gap={rem(2)} align="center">
-                <IconEye stroke={1.5} />
-                <Text tt="uppercase" fz={rem(9)} lts={0.9} fw={700}>
-                  wishlist
-                </Text>
-              </Stack>
-            </UnstyledButton>
-
-            <UnstyledButton>
-              <Stack gap={rem(2)} align="center">
-                <IconUserCircle stroke={1.5} />
-                <Text tt="uppercase" fz={rem(9)} lts={0.9} fw={700}>
-                  account
-                </Text>
-              </Stack>
-            </UnstyledButton>
-          </Group>
-        </Paper>
-      </Box>
+      <BottomNavigation />
     </Box>
   );
 }
