@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <Box bg={backgroundColor} h="100dvh">
-      <Container px="" pos="relative" size="xs" h="100%">
+      <Container px={0} pos="relative" size="xs" h="100%">
         <Box
           animate={{ opacity: 1, y: 0 }}
           component={motion.svg}
@@ -46,6 +46,7 @@ export default function Home() {
           height="342"
           initial={{ opacity: 0, y: "100%" }}
           pos="absolute"
+          right={0}
           transition={{ bounceDamping: 0, duration: 1 }}
           viewBox="0 0 430 342"
           width="430"
