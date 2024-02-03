@@ -24,8 +24,8 @@ importers:
   apps/beer:
     dependencies:
       '@mantine/core':
-        specifier: ^7.4.0
-        version: 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^7.5.1
+        version: 7.5.1(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/hooks':
         specifier: ^7.4.0
         version: 7.4.0(react@18.2.0)
@@ -95,10 +95,10 @@ importers:
     dependencies:
       '@mantine/carousel':
         specifier: ^7.4.0
-        version: 7.4.0(@mantine/core@7.4.0)(@mantine/hooks@7.4.0)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0)
+        version: 7.4.0(@mantine/core@7.5.1)(@mantine/hooks@7.4.0)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/core':
-        specifier: ^7.4.0
-        version: 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^7.5.1
+        version: 7.5.1(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/hooks':
         specifier: ^7.4.0
         version: 7.4.0(react@18.2.0)
@@ -213,8 +213,8 @@ importers:
   apps/skin-care:
     dependencies:
       '@mantine/core':
-        specifier: ^7.4.0
-        version: 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^7.5.1
+        version: 7.5.1(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/hooks':
         specifier: ^7.4.0
         version: 7.4.0(react@18.2.0)
@@ -280,8 +280,8 @@ importers:
   apps/watch-store:
     dependencies:
       '@mantine/core':
-        specifier: ^7.4.0
-        version: 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^7.5.1
+        version: 7.5.1(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/hooks':
         specifier: ^7.4.0
         version: 7.4.0(react@18.2.0)
@@ -853,7 +853,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@mantine/carousel@7.4.0(@mantine/core@7.4.0)(@mantine/hooks@7.4.0)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0):
+  /@mantine/carousel@7.4.0(@mantine/core@7.5.1)(@mantine/hooks@7.4.0)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-eWy1oeHc8TMuUxJK7V0lPha+9Hoh1k0LJJKT7VGk1EALdBxmr1Ntwg1SbqW+SbeJbebP+ZzIGTrUcLaMSVzlxw==}
     peerDependencies:
       '@mantine/core': 7.4.0
@@ -862,7 +862,7 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
-      '@mantine/core': 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
+      '@mantine/core': 7.5.1(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/hooks': 7.4.0(react@18.2.0)
       embla-carousel-react: 7.1.0(react@18.2.0)
       react: 18.2.0
@@ -877,10 +877,10 @@ packages:
       chroma-js: 2.4.2
     dev: true
 
-  /@mantine/core@7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-wnQOz1aSpqVlCpdyY4XyJKRqlW87mexMADQrbCTwg/5BbxKp8XU6sTcnk1piwyR0mM6SI1uo0Yik2qYNGFlyWw==}
+  /@mantine/core@7.5.1(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-V7apuQuRubqxTRXb1uxOM43K7tkLRzpbb1ONJ/sj8QRp/26bShkdYp7EVuSKyrQ8DQ5EGYyBBGyzBOQARh41gA==}
     peerDependencies:
-      '@mantine/hooks': 7.4.0
+      '@mantine/hooks': 7.5.1
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
@@ -3676,6 +3676,7 @@ packages:
 
   /loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
     dependencies:
       js-tokens: 4.0.0
 
