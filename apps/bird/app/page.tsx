@@ -15,6 +15,7 @@ import {
   IconAlignLeft,
   IconArrowRight,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -60,6 +61,8 @@ export default function Home() {
 
               <ActionIcon
                 color="white"
+                component={Link}
+                href="/list"
                 radius="xl"
                 size="xl"
                 variant="outline"
