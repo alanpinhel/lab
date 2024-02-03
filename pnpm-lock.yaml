@@ -91,6 +91,82 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
+  apps/bird:
+    dependencies:
+      '@mantine/carousel':
+        specifier: ^7.4.0
+        version: 7.4.0(@mantine/core@7.4.0)(@mantine/hooks@7.4.0)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0)
+      '@mantine/core':
+        specifier: ^7.4.0
+        version: 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
+      '@mantine/hooks':
+        specifier: ^7.4.0
+        version: 7.4.0(react@18.2.0)
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      '@tabler/icons-react':
+        specifier: ^2.45.0
+        version: 2.45.0(react@18.2.0)
+      embla-carousel-react:
+        specifier: ^7.1.0
+        version: 7.1.0(react@18.2.0)
+      framer-motion:
+        specifier: ^10.18.0
+        version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
+      next:
+        specifier: ^14.0.3
+        version: 14.0.3(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@mantine/colors-generator':
+        specifier: ^7.4.0
+        version: 7.4.0(chroma-js@2.4.2)
+      '@next/eslint-plugin-next':
+        specifier: ^14.0.2
+        version: 14.0.2
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@types/eslint':
+        specifier: ^8.44.7
+        version: 8.44.7
+      '@types/node':
+        specifier: ^17.0.12
+        version: 17.0.45
+      '@types/react':
+        specifier: ^18.0.22
+        version: 18.2.5
+      '@types/react-dom':
+        specifier: ^18.0.7
+        version: 18.2.3
+      chroma-js:
+        specifier: ^2.4.2
+        version: 2.4.2
+      eslint:
+        specifier: ^8.53.0
+        version: 8.54.0
+      postcss:
+        specifier: ^8.4.33
+        version: 8.4.33
+      postcss-preset-mantine:
+        specifier: ^1.12.3
+        version: 1.12.3(postcss@8.4.33)
+      postcss-simple-vars:
+        specifier: ^7.0.1
+        version: 7.0.1(postcss@8.4.33)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+
   apps/docs:
     dependencies:
       '@repo/ui':
@@ -776,6 +852,22 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /@mantine/carousel@7.4.0(@mantine/core@7.4.0)(@mantine/hooks@7.4.0)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-eWy1oeHc8TMuUxJK7V0lPha+9Hoh1k0LJJKT7VGk1EALdBxmr1Ntwg1SbqW+SbeJbebP+ZzIGTrUcLaMSVzlxw==}
+    peerDependencies:
+      '@mantine/core': 7.4.0
+      '@mantine/hooks': 7.4.0
+      embla-carousel-react: '>=7.0.0'
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      '@mantine/core': 7.4.0(@mantine/hooks@7.4.0)(@types/react@18.2.5)(react-dom@18.2.0)(react@18.2.0)
+      '@mantine/hooks': 7.4.0(react@18.2.0)
+      embla-carousel-react: 7.1.0(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /@mantine/colors-generator@7.4.0(chroma-js@2.4.2):
     resolution: {integrity: sha512-vX6ZVNXl2Q1qVxdMTrKD5/nFIk53WxMxE28tG5dUg93j7wr7RP7N1ETbJS3Mrj9P+Siq67i0MC+YwskjYkfF9A==}
@@ -2003,6 +2095,19 @@ packages:
     resolution: {integrity: sha512-93y1gcONABZ7uqYe/JWDVQP/Pj/sQSunF0HVAPdlg/pfBnOyBMLlQUxWvkqcljJg1+W6cjvPuYD+r1Th9Tn8mA==}
     dev: true
 
+  /embla-carousel-react@7.1.0(react@18.2.0):
+    resolution: {integrity: sha512-tbYRPRZSDNd2QLNqYDcArAakGIxtUbhS7tkP0dGXktXHGgcX+3ji3VrOUTOftBiujZrMV8kRxtrRUe/1soloIQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0
+    dependencies:
+      embla-carousel: 7.1.0
+      react: 18.2.0
+    dev: false
+
+  /embla-carousel@7.1.0:
+    resolution: {integrity: sha512-Bh8Pa8NWzgugLkf8sAGexQlBCNDFaej5BXiKgQdRJ1mUC9NWBrw9Z23YVPVGkguWoz5LMjZXXFVGCobl3UPt/Q==}
+    dev: false
+
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
     dev: true
@@ -2911,7 +3016,7 @@ packages:
       dir-glob: 3.0.1
       fast-glob: 3.2.12
       glob: 7.2.3
-      ignore: 5.2.4
+      ignore: 5.3.0
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
