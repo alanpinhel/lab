@@ -1,0 +1,12 @@
+.speedDial {
+  bottom: var(--mantine-spacing-md);
+  opacity: 0.4;
+  position: fixed;
+  right: var(--mantine-spacing-md);
+  transition: opacity 100ms ease;
+  z-index: 10000;
+}
+
+.speedDial:hover {
+  opacity: 1;
+}
