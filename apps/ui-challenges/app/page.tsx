@@ -17,6 +17,17 @@ export default function HomePage() {
     <Container py="md">
       <SimpleGrid cols={3}>
         <Card
+          href="/electric-scooter"
+          component={Link}
+          padding={0}
+          radius="md"
+        >
+          <Image
+            src="/electric-scooter/cover.png"
+            alt="Cover Electric Scooter"
+          />
+        </Card>
+        <Card
           href="/birds"
           component={Link}
           padding={0}
