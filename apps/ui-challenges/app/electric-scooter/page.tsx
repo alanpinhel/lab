@@ -19,6 +19,7 @@ import {
   IconLockOpen,
   IconRoute,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 export default function ElectricScooterPage() {
   return (
@@ -46,12 +47,14 @@ export default function ElectricScooterPage() {
         </Title>
 
         <Card
-          align="flex-end"
           bg="url(/electric-scooter/scooter-1.png), var(--electric-scooter-color-green)"
-          component={Group}
+          bgr="no-repeat"
+          component={Link}
+          href="/electric-scooter/detail"
           px="xl"
           py={40}
           radius={32}
+          style={{ alignItems: "flex-end" }}
         >
           <Stack
             bg="white"
@@ -134,7 +137,12 @@ export default function ElectricScooterPage() {
                   />
                 </Center>
                 <Stack gap={0}>
-                  <Text fz={14} lh={1.4} c="white">
+                  <Text
+                    c="white"
+                    fz={14}
+                    lh={1.4}
+                    opacity={0.5}
+                  >
                     Last tour
                   </Text>
                   <Text
