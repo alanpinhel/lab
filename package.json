@@ -13,10 +13,9 @@
     "prettier": "^3.2.4",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.14.0",
   "engines": {
     "node": "20.x",
-    "npm": "10.2.5",
-    "pnpm": "8.14.0"
+    "npm": "10.x",
+    "pnpm": "8.x"
   }
 }
