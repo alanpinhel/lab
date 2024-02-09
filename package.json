@@ -15,7 +15,7 @@
   },
   "packageManager": "pnpm@8.14.0",
   "engines": {
-    "node": "20.10.0",
+    "node": "20.x",
     "npm": "10.2.5",
     "pnpm": "8.14.0"
   }
