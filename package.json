@@ -1,11 +1,17 @@
 {
-  "name": "labs",
+  "name": "lab",
   "private": true,
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x",
+    "pnpm": "8.x"
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "turbo test"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -13,10 +19,5 @@
     "prettier": "^3.2.4",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.14.0",
-  "engines": {
-    "node": "20.x",
-    "npm": "10.x",
-    "pnpm": "8.x"
-  }
+  "packageManager": "pnpm@8.14.0"
 }
