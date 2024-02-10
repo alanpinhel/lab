@@ -1,21 +1,19 @@
 <!---
-Parabéns por criar um novo Pull Request 💚!
+Thanks for creating a Pull Request 💖!
 
-Leia o seguinte antes de enviar:
-- Mantenha seu PR o menor possível;
-- Limite seu PR a um tipo (docs, feature, refactoring, ci ou bugfix);
-- Certifique-se de que não foi adicionado algum warning imprevisto no build ou tests;
-- O template é uma sugestão, sinta-se à vontade para remover tópicos que não fizerem sentido.
+Please read the following before submitting:
+- Keep your PR as small as possible.
+- Limit your PR to one type (docs, feature, refactoring, ci, or bugfix).
 -->
 
 ## 🔗 Links
 
-- https://
+- [Figma](https://www.figma.com/file/)
 
-## 📝 Descrição
+## 📝 Description
 
-Adicione uma breve descrição
+Add a short description
 
-## 🖼️ Anexos
+## 🖼️ Attachments
 
-Adicione imagens e/ou vídeos
+Add images and/or videos
