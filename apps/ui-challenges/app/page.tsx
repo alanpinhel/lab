@@ -1,14 +1,49 @@
 "use client";
 
 import { faviconTemplate } from "@/utils/favicon-template";
-import {
-  Card,
-  Container,
-  Image,
-  SimpleGrid,
-} from "@mantine/core";
+import { Card, Container, SimpleGrid } from "@mantine/core";
 import { useFavicon } from "@mantine/hooks";
+import Image from "next/image";
 import Link from "next/link";
+
+const challenges = [
+  {
+    title: "Rolex Store",
+    href: "/rolex",
+    image: "/rolex/cover.webp",
+    alt: "Cover Rolex Store",
+  },
+  {
+    title: "Electric Scooter",
+    href: "/electric-scooter",
+    image: "/electric-scooter/cover.png",
+    alt: "Cover Electric Scooter",
+  },
+  {
+    title: "Birds",
+    href: "/birds",
+    image: "/birds/cover.png",
+    alt: "Cover Birds",
+  },
+  {
+    title: "Watch Store",
+    href: "/watch-store",
+    image: "/watch-store/cover.png",
+    alt: "Cover Watch Store",
+  },
+  {
+    title: "Skin Care",
+    href: "/skin-care",
+    image: "/skin-care/cover.png",
+    alt: "Cover Skin Care",
+  },
+  {
+    title: "Beer",
+    href: "/beer",
+    image: "/beer/cover.png",
+    alt: "Cover Beer",
+  },
+];
 
 export default function HomePage() {
   useFavicon(`data:image/svg+xml,${faviconTemplate`🎯`}`);
@@ -16,55 +51,24 @@ export default function HomePage() {
   return (
     <Container py="md">
       <SimpleGrid cols={3}>
-        <Card
-          href="/electric-scooter"
-          component={Link}
-          padding={0}
-          radius="md"
-        >
-          <Image
-            src="/electric-scooter/cover.png"
-            alt="Cover Electric Scooter"
-          />
-        </Card>
-        <Card
-          href="/birds"
-          component={Link}
-          padding={0}
-          radius="md"
-        >
-          <Image src="/birds/cover.png" alt="Cover Birds" />
-        </Card>
-        <Card
-          href="/watch-store"
-          component={Link}
-          padding={0}
-          radius="md"
-        >
-          <Image
-            src="/watch-store/cover.png"
-            alt="Cover Watch Store"
-          />
-        </Card>
-        <Card
-          href="/skin-care"
-          component={Link}
-          padding={0}
-          radius="md"
-        >
-          <Image
-            src="/skin-care/cover.png"
-            alt="Cover Skin Care"
-          />
-        </Card>
-        <Card
-          href="/beer"
-          component={Link}
-          padding={0}
-          radius="md"
-        >
-          <Image src="/beer/cover.png" alt="Cover Beer" />
-        </Card>
+        {challenges.map((challenge) => (
+          <Card
+            key={challenge.title}
+            href={challenge.href}
+            component={Link}
+            padding={0}
+            radius="md"
+          >
+            <Image
+              alt={challenge.alt}
+              height={1920}
+              sizes="33vw"
+              src={challenge.image}
+              style={{ width: "100%", height: "auto" }}
+              width={1080}
+            />
+          </Card>
+        ))}
       </SimpleGrid>
     </Container>
   );
