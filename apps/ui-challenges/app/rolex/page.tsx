@@ -9,27 +9,10 @@ import {
   Stack,
   Text,
 } from "@mantine/core";
-import {
-  IconAlignLeft,
-  IconArrowRight,
-  IconShoppingBag,
-} from "@tabler/icons-react";
+import { IconArrowRight } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
-
-const NavBar = () => (
-  <Group justify="space-between">
-    <ActionIcon size="xl" radius="xl" color="rgba(36, 51, 78, 0.25)">
-      <IconAlignLeft stroke={1} />
-    </ActionIcon>
-
-    <Image alt="Rolex Logo" src="/rolex/logo.svg" width={104} height={68} />
-
-    <ActionIcon size="xl" radius="xl" color="rgba(36, 51, 78, 0.25)">
-      <IconShoppingBag stroke={1} />
-    </ActionIcon>
-  </Group>
-);
+import { Navbar } from "./components/navbar";
 
 const watches = [
   {
@@ -62,7 +45,7 @@ export default function RolexPage() {
       py={44}
       size="xs"
     >
-      <NavBar />
+      <Navbar />
 
       <Stack gap={24} mt={30}>
         <Text fz={20} tt="uppercase" lh={1}>
