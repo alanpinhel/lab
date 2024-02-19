@@ -64,14 +64,14 @@ importers:
   apps/ui-challenges:
     dependencies:
       '@mantine/carousel':
-        specifier: ^7.5.2
-        version: 7.5.2(@mantine/core@7.5.2)(@mantine/hooks@7.5.2)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^7.5.3
+        version: 7.5.3(@mantine/core@7.5.3)(@mantine/hooks@7.5.3)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/core':
-        specifier: ^7.5.2
-        version: 7.5.2(@mantine/hooks@7.5.2)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^7.5.3
+        version: 7.5.3(@mantine/hooks@7.5.3)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
       '@mantine/hooks':
-        specifier: ^7.5.2
-        version: 7.5.2(react@18.2.0)
+        specifier: ^7.5.3
+        version: 7.5.3(react@18.2.0)
       '@tabler/icons-react':
         specifier: ^2.45.0
         version: 2.45.0(react@18.2.0)
@@ -92,8 +92,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@mantine/colors-generator':
-        specifier: ^7.5.2
-        version: 7.5.2(chroma-js@2.4.2)
+        specifier: ^7.5.3
+        version: 7.5.3(chroma-js@2.4.2)
       '@next/eslint-plugin-next':
         specifier: ^14.1.0
         version: 14.1.0
@@ -540,39 +540,39 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@mantine/carousel@7.5.2(@mantine/core@7.5.2)(@mantine/hooks@7.5.2)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-9LBnsETBcT3Wr5jGPUpTBirYMD/EyFvYaBolSSUDJKxXxcmSAnjZWT7mvhTC5oU0mOrUlgLoo2IBJGwL0OY0DQ==}
+  /@mantine/carousel@7.5.3(@mantine/core@7.5.3)(@mantine/hooks@7.5.3)(embla-carousel-react@7.1.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-rGB4tpYc+n2gTC0ijHP2jeMO3z5s29lY/LqtSq2uh8JnIXguV23QUR61twI1TkuvFNhyS4jJspruaEx2ErtrLg==}
     peerDependencies:
-      '@mantine/core': 7.5.2
-      '@mantine/hooks': 7.5.2
+      '@mantine/core': 7.5.3
+      '@mantine/hooks': 7.5.3
       embla-carousel-react: '>=7.0.0'
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
-      '@mantine/core': 7.5.2(@mantine/hooks@7.5.2)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
-      '@mantine/hooks': 7.5.2(react@18.2.0)
+      '@mantine/core': 7.5.3(@mantine/hooks@7.5.3)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
+      '@mantine/hooks': 7.5.3(react@18.2.0)
       embla-carousel-react: 7.1.0(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@mantine/colors-generator@7.5.2(chroma-js@2.4.2):
-    resolution: {integrity: sha512-C5htPJRcF6fbttvZcD0yWGcfJlJ129QjE4dEEcVyUeZ/RM1upSD9jD2uQSr0v4FkfPievLSvufZU+zcjgtOu4A==}
+  /@mantine/colors-generator@7.5.3(chroma-js@2.4.2):
+    resolution: {integrity: sha512-jWG9G53jq2htcNgR7b0KS3bL5yygJnhOQH6b/qcUw61I8cShwBg6xzNNnp4RHMmlRbzVRKCWXqttPwtmksMzSw==}
     peerDependencies:
       chroma-js: ^2.4.2
     dependencies:
       chroma-js: 2.4.2
     dev: true
 
-  /@mantine/core@7.5.2(@mantine/hooks@7.5.2)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-e58qTiLEp9qLxQ5JZlPNykJWBR+oi0q2J8JPKTjTJD+4UM58uh9oL4wuMEdUyBgiYGvDc/cVYF+rftMpuCt+KQ==}
+  /@mantine/core@7.5.3(@mantine/hooks@7.5.3)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Wvv6DJXI+GX9mmKG5HITTh/24sCZ0RoYQHdTHh0tOfGnEy+RleyhA82UjnMsp0n2NjfCISBwbiKgfya6b2iaFw==}
     peerDependencies:
-      '@mantine/hooks': 7.5.2
+      '@mantine/hooks': 7.5.3
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
       '@floating-ui/react': 0.24.8(react-dom@18.2.0)(react@18.2.0)
-      '@mantine/hooks': 7.5.2(react@18.2.0)
+      '@mantine/hooks': 7.5.3(react@18.2.0)
       clsx: 2.0.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -584,8 +584,8 @@ packages:
       - '@types/react'
     dev: false
 
-  /@mantine/hooks@7.5.2(react@18.2.0):
-    resolution: {integrity: sha512-4POujH5Xx84VB/xfM6EttDq725dqqL2DntoeMjHz3Ua94aK5Y0VSc1IwlETxCuF7yNV5/w/Z8kgeVVa5cDgrPg==}
+  /@mantine/hooks@7.5.3(react@18.2.0):
+    resolution: {integrity: sha512-mFI448mAs12v8FrgSVhytqlhTVrEjIfd/PqPEfwJu5YcZIq4YZdqpzJIUbANnRrFSvmoQpDb1PssdKx7Ds35hw==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
