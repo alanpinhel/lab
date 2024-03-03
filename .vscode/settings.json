@@ -1,4 +1,6 @@
 {
+  "prettier.printWidth": 60,
+  "editor.rulers": [60],
   "eslint.workingDirectories": [
     {
       "mode": "auto"
@@ -8,6 +10,9 @@
     "allerta",
     "Allerta",
     "barbrew",
+    "bgsz",
+    "dokterian",
+    "Dokterian",
     "embla",
     "Everose",
     "GITHUB",

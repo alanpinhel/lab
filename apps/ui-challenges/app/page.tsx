@@ -8,6 +8,12 @@ import Link from "next/link";
 
 const challenges = [
   {
+    title: "Dokterian",
+    href: "/dokterian",
+    image: "/dokterian/cover.png",
+    alt: "Dokterian",
+  },
+  {
     title: "Rolex Store",
     href: "/rolex",
     image: "/rolex/cover.webp",
