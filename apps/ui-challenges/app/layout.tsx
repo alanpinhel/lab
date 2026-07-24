@@ -2,12 +2,12 @@ import "@mantine/carousel/styles.css";
 import "@mantine/core/styles.css";
 import "./globals.css";
 
+import { SpeedDial } from "@/components/speed-dial";
 import {
   ColorSchemeScript,
   MantineProvider,
 } from "@mantine/core";
 import { Metadata } from "next";
-import { SpeedDial } from "./components/speed-dial/speed-dial";
 
 export const metadata: Metadata = {
   title: "UI Challenges",
